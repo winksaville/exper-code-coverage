@@ -1,0 +1,4 @@
+/target
+
+# Ignore tarpaulin_* which are output when --debug parameter is used.
+tarpaulin_*
