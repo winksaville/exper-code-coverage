@@ -6,7 +6,64 @@
 
 Experiment with code coverage and see how well [LLVM source-based code coverage](https://rustc-dev-guide.rust-lang.org/llvm-coverage-instrumentation.html) works.
 
-## Code coverage
+I'm using cargo-llvm-cov and tarpaulin to install:
+```
+cargo install cargo-llvm-cov
+cargo install cargo-tarpaulin
+```
+
+## LLMM Source-Based Code Coverage
+
+Currently "100%"
+
+```
+wink@3900x:~/prgs/rust/myrepos/expr-code-coverage (main)
+$ cargo llvm-cov
+   Compiling expr-code-coverage v0.1.0 (/home/wink/prgs/rust/myrepos/expr-code-coverage)
+    Finished test [unoptimized + debuginfo] target(s) in 0.79s
+     Running unittests (target/llvm-cov-target/debug/deps/expr_code_coverage-ae7fad6d44ba68fc)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cli.rs (target/llvm-cov-target/debug/deps/cli-45ae8237db2683e9)
+
+running 1 test
+test test_no_params ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+Filename                                                        Regions    Missed Regions     Cover   Functions  Missed Functions  Executed       Lines      Missed Lines     Cover    Branches   Missed Branches     Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/home/wink/prgs/rust/myrepos/expr-code-coverage/src/main.rs           2                 0   100.00%           2                 0   100.00%           4                 0   100.00%           0                 0         -
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                 2                 0   100.00%           2                 0   100.00%           4                 0   100.00%           0                 0         -
+wink@3900x:~/prgs/rust/myrepos/expr-code-coverage (main)
+$ cargo llvm-cov
+   Compiling expr-code-coverage v0.1.0 (/home/wink/prgs/rust/myrepos/expr-code-coverage)
+    Finished test [unoptimized + debuginfo] target(s) in 0.79s
+     Running unittests (target/llvm-cov-target/debug/deps/expr_code_coverage-ae7fad6d44ba68fc)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cli.rs (target/llvm-cov-target/debug/deps/cli-45ae8237db2683e9)
+
+running 1 test
+test test_no_params ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+Filename                                                        Regions    Missed Regions     Cover   Functions  Missed Functions  Executed       Lines      Missed Lines     Cover    Branches   Missed Branches     Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/home/wink/prgs/rust/myrepos/expr-code-coverage/src/main.rs           2                 0   100.00%           2                 0   100.00%           4                 0   100.00%           0                 0         -
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                        
+```
+
+## Tarpaulin Code Coverage
 
 Currently "100%" 2/2. 
 
