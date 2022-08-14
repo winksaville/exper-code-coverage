@@ -3,7 +3,7 @@ use predicates::prelude::*;
 use std::error::Error;
 use std::process::Command;
 
-const APP_NAME: &str = "expr-code-coverage";
+const APP_NAME: &str = "exper-code-coverage";
 
 // If tarpaulin starts failing during github Actions disable
 // by uncommenting #[cfg(not(tarpauling))]. This will reduce

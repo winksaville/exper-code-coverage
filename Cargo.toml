@@ -1,6 +1,6 @@
 [package]
-name = "expr-code-coverage"
-version = "0.1.0"
+name = "exper-code-coverage"
+version = "0.2.0"
 authors = ["Wink Saville <wink@saville.com>"]
 edition = "2021"
 
