@@ -71,10 +71,10 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           # Added CODECOV_TOKEN to repo in Settings -> Secrets:
-          #    https://github.com/winksaville/time-ms-conversions/settings/secrets/actions
+          #    https://github.com/winksaville/exper-code-coverage/settings/secrets/actions
           # Then click "New repository secret" adding CODECOV_TOKEN as name and
           # the token from:
-          #    https://app.codecov.io/gh/winksaville/time-ms-conversions/settings
+          #    https://app.codecov.io/gh/winksaville/exper-code-coverage/settings
           #
           token: ${{secrets.CODECOV_TOKEN}} # Seems to be required
           fail_ci_if_error: true
