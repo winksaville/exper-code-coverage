@@ -18,10 +18,10 @@ Currently "100%"
 
 
 ```
-wink@3900x 22-08-14T17:15:09.819Z:~/prgs/rust/myrepos/exper-code-coverage (main)
+wink@3900x 22-08-14T17:46:32.930Z:~/prgs/rust/myrepos/exper-code-coverage (main)
 $ cargo llvm-cov
    Compiling exper-code-coverage v0.2.0 (/home/wink/prgs/rust/myrepos/exper-code-coverage)
-    Finished test [unoptimized + debuginfo] target(s) in 0.63s
+    Finished test [unoptimized + debuginfo] target(s) in 0.65s
      Running unittests src/main.rs (target/llvm-cov-target/debug/deps/exper_code_coverage-45914372d0985a3c)
 
 running 0 tests
@@ -35,12 +35,11 @@ test test_no_params ... ok
 
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
-Filename                            Regions    Missed Regions     Cover   Functions  Missed Functions  Executed       Lines      Missed Lines     Cover    Branches   Missed Branches     Cover
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-exper-code-coverage/src/main.rs           2                 0   100.00%           2                 0   100.00%           4                 0   100.00%           0                 0         -
-expr-code-coverage/src/main.rs            2                 2     0.00%           2                 2     0.00%           4                 4     0.00%           0                 0         -
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TOTAL                                     4                 2    50.00%           4                 2    50.00%           8                 4    50.00%           0                 0         -
+Filename                                                         Regions    Missed Regions     Cover   Functions  Missed Functions  Executed       Lines      Missed Lines     Cover    Branches   Missed Branches     Cover
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/home/wink/prgs/rust/myrepos/exper-code-coverage/src/main.rs           2                 0   100.00%           2                 0   100.00%           4                 0   100.00%           0                 0         -
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                  2                 0   100.00%           2                 0   100.00%           4                 0   100.00%           0                 0         -
 ```
 
 ## Tarpaulin Code Coverage
