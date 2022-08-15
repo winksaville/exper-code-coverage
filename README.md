@@ -5,6 +5,10 @@
 [![codecov](https://codecov.io/gh/winksaville/exper-code-coverage/branch/main/graph/badge.svg?token=cowZtK1KK1)](https://codecov.io/gh/winksaville/exper-code-coverage)
 
 Experiment with code coverage and see how well [LLVM source-based code coverage](https://rustc-dev-guide.rust-lang.org/llvm-coverage-instrumentation.html) works.
+> Note: I believe the library with `if_short_circuit_and()` and `short_circuit_and()`
+> shows that `branch coverage` as tracked in [rust issue #79649](https://github.com/rust-lang/rust/issues/79649).
+> I've provided a couple comments to that effect [here](https://github.com/rust-lang/rust/issues/79649#issuecomment-1214483770)
+> and [here](https://github.com/rust-lang/rust/issues/79649#issuecomment-1215764155).
 
 Short answer seems to be that llvm-cov is better than tarpaulin as I
 never see 100% for trapaulin.  But llvm-cov is not perfect. I've
