@@ -15,7 +15,7 @@ const APP_NAME: &str = "exper-code-coverage";
 fn test_no_params() -> Result<(), Box<dyn Error>> {
     let mut cmd = Command::cargo_bin(APP_NAME)?;
 
-    let expected_to_start_with: &str = "Hello, world!";
+    let expected_to_start_with: &str = "Evaluates:";
 
     cmd.assert()
         .code(predicate::eq(0))
